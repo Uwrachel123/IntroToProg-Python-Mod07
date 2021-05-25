@@ -117,6 +117,9 @@ objFile.close()
 print(objFileData)
 ~~~
 
+The binary file “PickleFile.dat as shown in Notepad below:
+€ •        ]”(Œ homework”Œ high”e.€ •        ]”(Œ exercise”Œ high”e.€ •        ]”(Œcooking”Œ medium”e.€ •        ]”(Œ exercise”Œ high”e.€ •        ]”(Œcooking”Œ medium”e.
+
 ##Running the code in PyCharm and Command Window
 
 ![Figure 1-1 and Figure 1-2]( https://github.com/Uwrachel123/IntroToProg-Python-Mod07/blob/main/Figure%201.PNG "Figure 1-1 output - catch error and Figure: 1-2 output - no error in PyCharm")
