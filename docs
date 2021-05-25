@@ -1,10 +1,10 @@
-# Title: Exception Handling and Pickeling
+#Title: Exception Handling and Pickeling
 **Dev:** ^Rachel M Woo*          
 **Date:**  *May 25, 2021*    
 * Foundation of Programming, Python*     
 * Assignment 07 *     
 
-## Introduction
+##Introduction
 In this module I learned how to create scripts using custom functions, files, and structured error handling. 
 I also learned how to add image for GitHub web pages. I am required to Research the web for example of 
 how to use exception handling and Pickling features in Python and share the notes and the URL. 
@@ -76,7 +76,7 @@ else:
      reciprocal = 1/num
      print(reciprocal)
 ~~~
-## What is meant by raising an exception in Python?
+##What is meant by raising an exception in Python?
 When a Python script encounters a situation that it cannot handle, it raise an exception. 
 An exception is a Python object that represents an error. When a Python script raises an exception, 
 it must either handle the exception immediately otherwise it terminates and quits. 
@@ -91,7 +91,7 @@ except ValueError as ve:
     print(ve)
 ~~~
 
-## Research Pickling in Python
+##Research Pickling in Python
 Pickling in Python means the process of serializing a Python object into a byte stream.
 The pickle module is responsible for the serialization and deserialization of Python objects. 
 What does that mean? well, this is what I am going to answer in this article, so let’s get started. 
@@ -117,35 +117,36 @@ objFile.close()
 print(objFileData)
 ~~~
 
-## Running the code in PyCharm and Command Window
+##Running the code in PyCharm and Command Window
 
-![alt text]( https://github.com/Uwrachel123/IntroToProg-Python-Mod07/blob/main/Figure%201.PNG "tooltip text")
-Figure 1-1: Run with exception output – catch error;  Figure 1-2: Run with exception output – no error
+![Figure 1-1 and Figure 1-2]( https://github.com/Uwrachel123/IntroToProg-Python-Mod07/blob/main/Figure%201.PNG "Figure 1-1 output - catch error and Figure: 1-2 output - no error in PyCharm")
+Figure 1-1: Run with exception output – catch error 
+Figure 1-2: Run with exception output – no error
 
-<img.Figure 2>
+![Figure 2]( https://github.com/Uwrachel123/IntroToProg-Python-Mod07/blob/main/Figure%202.PNG "Figure 2: Output in Command Window")
 Figure 2: Running output in command window
 
-## Create an advanced GitHub- Webpage 
+##Create an advanced GitHub- Webpage 
 
-### Formatting the Page: I use the "Preview" tab to see what my new markdown file looks like each time I modify the text
+###Formatting the Page: I use the "Preview" tab to see what my new markdown file looks like each time I modify the text
 The look changes based on what markdown commands I use. While there are lots of commands available, let's focus on the ones you need for the assignment.
 
-### Creating Text Headers: "#" symbol, indicates a header. "##" symbol, indicate topic. "###" symbol, indicate sub-topic.
+###Creating Text Headers: "#" symbol, indicates a header. "##" symbol, indicate topic. "###" symbol, indicate sub-topic.
 
-### Formatting Text: You can make text bold using two Astrid "**" symbols or italic using a single Astrid.
+###Formatting Text: You can make text bold using two Astrid "**" symbols or italic using a single Astrid.
 
-### Adding images to webpage
+###Adding images to webpage
 This task is the difficult to accomplish. I searched in web how to add image to webpage. 
 The instructions provide by professor Root helped me how to add figures (image) to my GitHub’s webpage. 
 
 Here is how I added the images to my webpage:
 (1) save figure/image as .png file
 (2) Upload .png file to webpage
-(2) use format provided by professor Rooy. ![alt text]( https://github.com/Uwrachel123/IntroToProg-Python-Mod07/blob/main/Figure%201.PNG "tooltip text")
+(2) use format provided by professor Rooy. Refer to Running the code. 
 (3) preview to se if the image got loaded in to webpage.
 
 
-## Summary
+##Summary
 Using the textbook, the Module 07 documentation and videos provided by the professor, and the supplemental websites and video,
 I was able to create the python code using PyCharm and run the script in PyCharm and Command window. I learned how to create a code to handling error. 
 Additionally I learned how to create advance GitHub’s web and utilized it to share my script and learn from my classmate’s script. 
