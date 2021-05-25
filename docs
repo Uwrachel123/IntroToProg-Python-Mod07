@@ -114,11 +114,8 @@ print(objFileData)
 
 ## Running the code in PyCharm and Command Window
 
-<img. Figure 1-1>
-Figure 1-1: Run with exception output – catch error
-
-<img. Figure 1-2>
-Figure 1-2: Run with exception output – no error
+![alt text]( https://github.com/Uwrachel123/IntroToProg-Python-Mod07/blob/main/Figure%201.PNG "tooltip text")
+Figure 1-1: Run with exception output – catch error;  Figure 1-2: Run with exception output – no error
 
 <img.Figure 2>
 Figure 2: Running output in command window
