@@ -8,20 +8,42 @@
 In this module I learned how to create scripts using custom functions, files, and structured error handling. 
 I also learned how to add image for GitHub web pages. I am required to Research the web for example of 
 how to use exception handling and Pickling features in Python and share the notes and the URL. 
-Research Exception Handling in Python Per professor’s lecture and video, there are many way to write code how 
+
+##Research Exception Handling in Python Per professor’s lecture and video, there are many way to write code how 
 to handling error using exception. One importance guide per Professor Root is that If the basic exception 
-“except exception as e:” is at the beginning, it will never catch the specific others exception (refer to Figure 1). 
-
-Figure 1: Basic exception should be the last exception 
-
+“except exception as e:” is at the beginning, it will never catch the specific others exception.
+Basic exception must be in the end as shown below:
+~~~
+try:
+    quotient = 5/0
+    f = open('SomeFile.txt', 'r+')  
+does not exist
+    f.write(quotient)  
+except ZeroDivisionError as e:
+    print("Please do no use Zero for the second number!")
+    print("Built-In Python error info: ")
+    print(e, e.__doc__, type(e), sep='\n')
+except FileNotFoundError as e:
+    print("Text file must exist before running this script!")
+    print("Built-In Python error info: ")
+    print(e, e.__doc__, type(e), sep='\n')
+except Exception as e:
+    print("There was a non-specific error!")
+    print("Built-In Python error info: ")
+    print(e, e.__doc__, type(e), sep='\n')
+~~~
 To prevent program error cause by human interaction, we can trap these errors by a try-except block of code. Here are few topics related to this topic:
 
 ##How to handle a single exception in Python? 
-Here is a link to learn more about this topic by John Paul Mueller. I tried running the code to handle single exception with no error output (Figure 2) and with error outputs (Figure 3). 
-
-Figure 2: code for error handling with single exception
-
-Figure 3: two difference outputs with single exception
+Here is a link to learn more about this topic by John Paul Mueller. I tried running the code to handle single exception as follows:
+~~~
+try:
+ Value = int(input("Type a number between 1 and 100: "))
+except ValueError: print("You must type a number between 1 and 100!")
+else:
+ if (Value > 0) and (Value <= 100): print("You typed: ", Value)
+ else: print("The value you typed is incorrect!")
+~~~
 
 ##How do I catch Exception in Python?
 Here is a link to learn more about this topic/how to. 
@@ -38,36 +60,72 @@ ValueError	                  |  Raised when a built-in operation or function rec
 KeyboardInterrupt	            |  Raised when the user hits the interrupt key (normally Control-C or Delete)
 EOFError	                    |  Raised when one of the built-in functions (input() or raw_input()) hits an end-of-file condition (EOF) without reading any data
 
-In Figure 2 and 3, the code use “ValueError” to handle error using single exception. 
 
 ##How to handle specific exceptions in Python with try-except-else?
-This link provides many example of how to handle specific exception. The code I use handle with try-except-else. 
-Run the script in BOTH PyCharm (Figure 4-1 through Figure 4-3)and an OS command/shell window(Figure 5-1 and Figure 5-2).
-
-Figure 4-1: Handling exception with try-except-else in PyCharm
-
-Figure 4-2: catch no error with exception output in PyCharm
-
-Figure 4-3: catch error with exception output in PyCharm
-Figure 5-1: Handling exception with try-except-else in Command Window 
-Figure 5-2: Output in Command Window
-
+This link provides many example of how to handle specific exception. The code I use handle with try-except-else. See below code to handling specific exception:
+~~~
+try:
+    num = int(input("Enter a number: "))
+    assert num % 2 == 0
+except:
+    print("Not an even number!")
+else:
+     reciprocal = 1/num
+     print(reciprocal)
+~~~
 ##What is meant by raising an exception in Python?
-When a Python script encounters a situation that it cannot handle, it raise an exception. An exception is a Python object that represents an error. 
-When a Python script raises an exception, it must either handle the exception immediately otherwise it terminates and quits. Here is a link to learn more on this topic. Run the script in BOTH PyCharm (Figure 6-1) and an OS command/shell window (Figure 6-2)
-
-Figure 6-1: Raising exception in PyCharm
-Figure 6-2: Raising exception in Command Window
+When a Python script encounters a situation that it cannot handle, it raise an exception. 
+An exception is a Python object that represents an error. When a Python script raises an exception, 
+it must either handle the exception immediately otherwise it terminates and quits. Here is a link to learn more on this topic. 
+The code for simple raising an exception as follows:
+~~~
+try:
+    a = int(input("Enter a positive integer: "))
+    if a <= 0:
+      raise ValueError("That is not a positive number!")
+except ValueError as ve:
+    print(ve)
+~~~
 
 ##Research Pickling in Python
-Pickling in Python means the process of serializing a Python object into a byte stream. The pickle module is responsible for the serialization and deserialization 
-of Python objects. What does that mean? well, this is what I am going to answer in this article, so let’s get started. Here is a link to find more information on this topic. 
+Pickling in Python means the process of serializing a Python object into a byte stream.
+The pickle module is responsible for the serialization and deserialization of Python objects. 
+What does that mean? well, this is what I am going to answer in this article, so let’s get started. 
+Here is a link to find more information on this topic. The code for simple pickling as follows:
 
-Figure 7-1: pickling code in PyCharm
-Figure 7-2: Picking output in PyCharm
-Create an advanced GitHub- Webpage 
+~~~
+import pickle
 
-###Formatting the Page: I use the "Preview" tab to see what my new markdown file looks like each time I modify the text (Figure 18). 
+strTask = str(input("Enter your task: "))
+strPriority = str(input("Enter your priority: "))
+lstUserInput = [strTask, strPriority]
+print(lstUserInput)
+
+objFile = open("PickleFile.dat", "ab")
+pickle.dump(lstUserInput, objFile)
+objFile.close()
+
+objFile = open("PickleFile.dat", "rb")
+objFileData = pickle.load(objFile)
+objFile.close()
+
+print(objFileData)
+~~~
+
+## Running the code in PyCharm and Command Window
+
+<img. Figure 1-1>
+Figure 1-1: Run with exception output – catch error
+
+<img. Figure 1-2>
+Figure 1-2: Run with exception output – no error
+
+<img.Figure 2>
+Figure 2: Running output in command window
+
+##Create an advanced GitHub- Webpage 
+
+###Formatting the Page: I use the "Preview" tab to see what my new markdown file looks like each time I modify the text
 The look changes based on what markdown commands I use. While there are lots of commands available, let's focus on the ones you need for the assignment.
 
 ###Creating Text Headers: "#" symbol, indicates a header. "##" symbol, indicate topic. "###" symbol, indicate sub-topic.
