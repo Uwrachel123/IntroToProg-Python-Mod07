@@ -48,8 +48,7 @@ else:
 ~~~
 
 ##How do I catch Exception in Python?
-Here is a link (https://www.pythonforbeginners.com/error-handling/exception-handling-in-python/)
-to learn more about this topic/how to. 
+Here is a link (https://www.pythonforbeginners.com/error-handling/exception-handling-in-python/) to learn more about this topic/how to. 
 
 An exception is an error that happens during execution of a program. When that error occurs, Python generate an exception that can be handled, 
 which avoids your program to crash. Exceptions are convenient in many ways for handling errors and special conditions in a program. When you think 
@@ -65,7 +64,8 @@ EOFError	                    |  Raised when one of the built-in functions (input
 
 
 ##How to handle specific exceptions in Python with try-except-else?
-This link provides many example of how to handle specific exception. The code I use handle with try-except-else. See below code to handling specific exception:
+This link (https://www.programiz.com/python-programming/exception-handling#:~:text=Catching%20Exceptions%20in%20Python.%20In%20Python%2C%20exceptions%20can,we%20perform%20once%20we%20have%20caught%20the%20exception.) 
+provides many example of how to handle specific exception. The code I use handle with try-except-else. See below code to handling specific exception:
 ~~~
 try:
     num = int(input("Enter a number: "))
@@ -76,10 +76,11 @@ else:
      reciprocal = 1/num
      print(reciprocal)
 ~~~
-##What is meant by raising an exception in Python?
+## What is meant by raising an exception in Python?
 When a Python script encounters a situation that it cannot handle, it raise an exception. 
 An exception is a Python object that represents an error. When a Python script raises an exception, 
-it must either handle the exception immediately otherwise it terminates and quits. Here is a link to learn more on this topic. 
+it must either handle the exception immediately otherwise it terminates and quits. 
+Here is a link (https://stackoverflow.com/questions/13531247/python-catching-specific-exception) to learn more on this topic. 
 The code for simple raising an exception as follows:
 ~~~
 try:
@@ -90,11 +91,12 @@ except ValueError as ve:
     print(ve)
 ~~~
 
-##Research Pickling in Python
+## Research Pickling in Python
 Pickling in Python means the process of serializing a Python object into a byte stream.
 The pickle module is responsible for the serialization and deserialization of Python objects. 
 What does that mean? well, this is what I am going to answer in this article, so let’s get started. 
-Here is a link to find more information on this topic. The code for simple pickling as follows:
+Here is a link (https://www.afternerd.com/blog/python-pickle/) to find more information on this topic. 
+The code for simple pickling as follows:
 
 ~~~
 import pickle
@@ -131,6 +133,17 @@ The look changes based on what markdown commands I use. While there are lots of 
 ###Creating Text Headers: "#" symbol, indicates a header. "##" symbol, indicate topic. "###" symbol, indicate sub-topic.
 
 ###Formatting Text: You can make text bold using two Astrid "**" symbols or italic using a single Astrid.
+
+### Adding images to webpage
+This task is the difficult to accomplish. I searched in web how to add image to webpage. 
+The instructions provide by professor Root helped me how to add figures (image) to my GitHub’s webpage. 
+
+Here is how I added the images to my webpage:
+(1) save figure/image as .png file
+(2) Upload .png file to webpage
+(2) use format provided by professor Rooy. ![alt text]( https://github.com/Uwrachel123/IntroToProg-Python-Mod07/blob/main/Figure%201.PNG "tooltip text")
+(3) preview to se if the image got loaded in to webpage.
+
 
 ##Summary
 Using the textbook, the Module 07 documentation and videos provided by the professor, and the supplemental websites and video,
