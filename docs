@@ -54,9 +54,9 @@ that you have a code which can produce an error then you can use exception handl
 the exception back until it is handled. Below table 1 provide common exception errors in python:
 
 Type of exception errors	    |  Description of exception errors
-IOError	                      |  If the file cannot be opened.
-ImportError	                  |  If python cannot find the module
-ValueError	                  |  Raised when a built-in operation or function receives an argument that has the right type but an inappropriate value
+IOError	                        |  If the file cannot be opened.
+ImportError	                    |  If python cannot find the module
+ValueError	                    |  Raised when a built-in operation or function receives an argument that has the right type but an inappropriate value
 KeyboardInterrupt	            |  Raised when the user hits the interrupt key (normally Control-C or Delete)
 EOFError	                    |  Raised when one of the built-in functions (input() or raw_input()) hits an end-of-file condition (EOF) without reading any data
 
